@@ -1,0 +1,3 @@
+/home/valeriikupriianov/Desktop/LoggerAdv/TestProject/Build/CMakeFiles/Loggerr.dir
+/home/valeriikupriianov/Desktop/LoggerAdv/TestProject/Build/CMakeFiles/edit_cache.dir
+/home/valeriikupriianov/Desktop/LoggerAdv/TestProject/Build/CMakeFiles/rebuild_cache.dir

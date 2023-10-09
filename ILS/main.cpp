@@ -1,6 +1,8 @@
-﻿#include "ILS/ILS_StdLog.h"
-#include "ILS/ILS_Defines.h"
-#include <Windows.h>
+﻿#include "ILS_StdLog.h"
+#include "ILS_Defines.h"
+#include <sys/types.h>
+#include <unistd.h>
+//#include "Windows.h"
 
 class App : public Logger {
 public:
@@ -29,12 +31,12 @@ public:
 
 int main() {
     auto logger = std::make_shared<StdLogger>("log.txt", std::cout, std::cerr);
-    logger->wrn("main", "starting %d", ::GetCurrentProcessId());
+    logger->wrn("main", "starting %d", ::getpid());
     {
         App app;
         app.setPersonalLogger(logger);
         app.Run();
     }
-    logger->wrn("main", "ending %d", ::GetCurrentProcessId());
+    logger->wrn("main", "ending %d", ::getpid());
     return 0;
 }

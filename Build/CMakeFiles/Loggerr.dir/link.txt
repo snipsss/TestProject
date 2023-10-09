@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/Loggerr.dir/ILS_StdLog.cpp.o CMakeFiles/Loggerr.dir/main.cpp.o -o bin/Loggerr 

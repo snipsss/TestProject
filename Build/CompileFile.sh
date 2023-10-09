@@ -1,0 +1,2 @@
+cmake ../ILS
+make
